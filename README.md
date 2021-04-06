@@ -26,3 +26,73 @@ kubectl describe pod <pod-name>
 ```
 kubectl delete pod <pod-name>
 ```
+## Create Replication Controller
+```
+kubectl create -f <file.yaml>
+```
+## List Replication Controller
+```
+kubectl get replicationcontroller
+```
+## Create ReplicaSet
+```
+kubectl create -f <file.yaml>
+```
+## List ReplicaSet
+```
+kubectl get replicaset
+```
+
+## Update ReplicaSet From File
+```
+kubectl replace -f <file.yaml>
+```
+
+## Scale ReplicaSet
+```
+kubectl scale --replicas=6 -f <file.yaml>
+```
+
+## Delete ReplicaSet
+```
+kubectl delete replicaset <file.yaml>
+```
+
+----
+
+## Create Deployment
+```
+kubectl create -f deployment <file.yaml>
+```
+## List Deployment
+```
+kubectl get deployment
+```
+
+## Update Deployment From File
+```
+kubectl replace -f <file.yaml>
+```
+
+## Delete Deployment
+```
+kubectl delete replicaset <file.yaml>
+```
+
+## List All Objects at Once
+```
+kubectl get all
+```
+## Look status of the Rollout
+```
+kubectl rollout status deployment/<deployment-name>
+```
+
+## Look history of the Rollout
+```
+kubectl rollout history deployment/<deployment-name>
+```
+## Deployment Rollback
+```
+kubectl rollout undo deployment/<deployment-name>
+```
