@@ -12,6 +12,12 @@ or
 ```
 kubectl apply -f <pod.yaml>
 ```
+
+or 
+
+```
+kubectl get pod <pod-name> -o yaml > pod-definition.yaml
+```
 ## List available PODs
 ```
 kubectl get pods
@@ -95,4 +101,22 @@ kubectl rollout history deployment/<deployment-name>
 ## Deployment Rollback
 ```
 kubectl rollout undo deployment/<deployment-name>
+```
+
+## Create Service
+```
+kubectl create -f <file.yaml>
+```
+## List Services
+```
+kubectl get service
+```
+## Update Service From File
+```
+kubectl replace -f <file.yaml>
+```
+
+## Delete Service
+```
+kubectl delete service <file.yaml>
 ```
